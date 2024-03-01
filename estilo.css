@@ -32,6 +32,12 @@ header{
     color: black;
 }
 
+.LinhaTitulo{
+    background-color: black;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
 /*Estilização footer*/
 .copyright{
     color: black;
@@ -53,6 +59,7 @@ header{
 .titulos-Tabela{
     text-align: center;
     font-weight: bold;
+    background-color: gainsboro;
 }
 
 .tabela{
