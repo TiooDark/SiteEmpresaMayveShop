@@ -55,13 +55,40 @@
                 <tr class="cliente">
                     <td class="info-nome">Roberto Carlos</td>
                     <td class="info-produto">Tablet Samsung S6 Lite 64GB</td>
-                    <td class="info-qtde">L</td>
-                    <td class="info-valor">L</td>
+                    <td class="info-qtde">3</td>
+                    <td class="info-valor">1699</td>
                     <td class="info-total">R$</td>
                 </tr>
             </table>
 
+            <section class="AddEncomenda" title="EncomendasAdd">
+            <h1 class="titulo-E">Adicionar nova encomenda</h1>
            </section>
+
+           <form name="NovaEncomenda" method="get" target="_blank" class="form">
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="" placeholder="Insira seu nome" class="input-padrao" required>
+
+                <label for="qtde">Qtde:</label>
+                <input type="int" id="qtde" name="" placeholder="Quantidade" class="input-padrao" required>
+
+                <select class="selectproduto" id="prod" multiple readonly>
+                <option value="1">Notebook Dell Vostro 7620 1TB</option>
+                <option value="2">Smartphone Galaxy S24 256GB</option>
+                <option value="3">JBL GO 3</option>
+                <option value="3">Tablet Samsung S6 Lite 64GB</option>
+                </select>
+                
+                <label for="valorUnit">R$ Unitário:</label>
+                <input type="int" id="valorUnit" name="" placeholder="Preço" class="input-padrao" required>
+
+                <button class="botaoaddprod" type="submit">Adicionar</button>
+                <h1 onclick="this.innerHTML='Isso acontece quando usamos o evento onClick!'"></h1>
+
+                </fieldset>
+            </form>
+
         </main>
 
 <script src="CalculaTotal.js"></script>
