@@ -49,5 +49,53 @@ clientes.forEach(function(cliente) {
 function calculaTotal(qtde, unitario) {
     var total = 0;
     total = qtde * unitario;
-    return total;
+    return formataValor(total);
 }
+
+function validaQtde(qtde){
+    if(!isNaN(qtde) && qtde > 0) {
+        return true
+    } else{
+        return false;
+    }
+}
+
+function validaUnitario(unitario){
+    if(!isNaN(unitario) && unitario > 0){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+function formataValor(valor){
+    var valor = valor.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'});
+
+    return valor;
+}
+
+//Verifica se a QUANTIDADE recebida é válida
+if (!validaQtde(qtde)){
+    clientes[i].querySelector("info-total").textContent="Quantidade inválida!";
+    clientes[i].classList.add("info-invalida");
+}
+
+//Verifica se o VALOR UNITÁRIO é válido
+if (!validaUnitario(unitario)){
+    clientes[i].querySelector("info-total").textContent="Valor unitário é inválido!";
+}
+
+//Formata o VALOR UNITÁRIO
+var unitFormat = formataValor(parseFloat(unitario));
+clientes[i].querySelector(".info-valor").textContent = unitFormat;
+
+//Configuração do botão adicionar
+
+//elemento.addEventListener("evento", ações-a-efetuar);
+
+//var botaoAdicionar = document.querySelector("#botaoaddprod");
+
+//botaoAdicionar.addEventListener("click", function(event){
+  //  event.preventDefault();
+    //console.log("Agora sim, o botão foi clicado!");
+//});
