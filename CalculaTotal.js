@@ -88,14 +88,3 @@ if (!validaUnitario(unitario)){
 //Formata o VALOR UNITÁRIO
 var unitFormat = formataValor(parseFloat(unitario));
 clientes[i].querySelector(".info-valor").textContent = unitFormat;
-
-//Configuração do botão adicionar
-
-//elemento.addEventListener("evento", ações-a-efetuar);
-
-//var botaoAdicionar = document.querySelector("#botaoaddprod");
-
-//botaoAdicionar.addEventListener("click", function(event){
-  //  event.preventDefault();
-    //console.log("Agora sim, o botão foi clicado!");
-//});
