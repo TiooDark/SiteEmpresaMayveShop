@@ -13,7 +13,7 @@
         </header>
 
         <main>
-           <section class="EncomendasMV" title="Encomendas">
+           <section class="EncomendasMV">
             <h1 class="titulo-E" onClick="this.innerHTML='Produtos!'">Encomendas</h1>
             <hr size="3" class="LinhaTitulo">
 
@@ -85,7 +85,7 @@
                 <label for="valorUnit">R$ Unitário:</label>
                 <input type="int" id="valorUnit" name="" placeholder="Preço" class="input-padrao" required>
 
-                <button class="botaoaddprod" type="submit">Adicionar</button>
+                <button class="botaoaddprod" type="submit" onclick="adicionarLinha()">Adicionar</button>
 
                 </fieldset>
             </form>
