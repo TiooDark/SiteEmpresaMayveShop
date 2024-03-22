@@ -24,9 +24,10 @@ function adicionarLinha(){
   // Define o conteúdo das células (por exemplo)
 
 var nome = document.getElementById("nome").value;
-var prod = document.getElementById("prod").textContent;
+var prod = document.getElementById("nprod").value;
 var qtde = parseFloat(document.getElementById("qtde").value);
 var valor = parseFloat(document.getElementById("valorUnit").value);
+var total = calculaTotal();
  
 celula1.textContent = nome;
 celula2.textContent = prod;
