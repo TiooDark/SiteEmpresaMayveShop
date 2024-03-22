@@ -74,17 +74,19 @@ function formataValor(valor){
     return valor;
 }
 
+function valida(clientes){
 //Verifica se a QUANTIDADE recebida é válida
 if (!validaQtde(qtde)){
-    clientes[i].querySelector("info-total").textContent="Quantidade inválida!";
-    clientes[i].classList.add("info-invalida");
+    clientes.querySelector(".info-total").textContent="Quantidade inválida!";
+    clientes.classList.add(".info-invalida");
 }
 
 //Verifica se o VALOR UNITÁRIO é válido
 if (!validaUnitario(unitario)){
-    clientes[i].querySelector("info-total").textContent="Valor unitário é inválido!";
+    clientes.querySelector(".info-total").textContent="Valor unitário é inválido!";
 }
 
 //Formata o VALOR UNITÁRIO
 var unitFormat = formataValor(parseFloat(unitario));
-clientes[i].querySelector(".info-valor").textContent = unitFormat;
+clientes.querySelector(".info-valor").textContent = unitFormat;
+}
