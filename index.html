@@ -2,6 +2,7 @@
     <head>
         <link href="estilo.css" rel="stylesheet">
         <link href="LogoMV.ico" rel="shortcut icon">
+        <meta charset="UTF-8" />
         <title>Mayve Shop</title>
     </head>
 
@@ -75,17 +76,22 @@
 
                 <label for="prod">Produto:</label>
                 <select class="selectproduto" id="nprod" multiple readonly>
-                <option value="1">Notebook Dell Vostro 7620 1TB</option>
-                <option value="2">Smartphone Galaxy S24 256GB</option>
-                <option value="3">Caixa de som JBL GO 3</option>
-                <option value="4">Tablet Samsung S6 Lite 64GB</option>
-                <option value="5">Fone Samsung Buds Live</option>
+                <option value="1" id="prod">Notebook Dell Vostro 7620 1TB</option>
+                <option value="2" id="prod">Smartphone Galaxy S24 256GB</option>
+                <option value="3" id="prod">Smartphone Galaxy S23 256GB</option>
+                <option value="4" id="prod">Tablet Samsung S6 Lite 64GB</option>
+                <option value="5" id="prod">Fone Samsung Buds Live</option>
+                <option value="6" id="prod">Amazon Fire TV Stick Lite</option>
+                <option value="7" id="prod">JBL FLIP ESSENTIAL 2</option>
+                <option value="8" id="prod">Caixa de som JBL GO 3</option>
+
                 </select>
                 
                 <label for="valorUnit">R$ Unitário:</label>
                 <input type="int" id="valorUnit" name="" placeholder="Preço" class="input-padrao" required>
 
-                <button class="botaoaddprod" type="submit" onclick="adicionarLinha()">Adicionar</button>
+                <button class="botaoaddprod" type="submit" onClick="adicionarLinha()">Adicionar</button>
+
 
                 </fieldset>
             </form>
